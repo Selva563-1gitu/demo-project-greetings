@@ -33,8 +33,9 @@ function wait(){
 }
 document.addEventListener('DOMContentLoaded',()=>{
     document.getElementById('msgi').addEventListener('click',() => {
-        document.querySelector('.msg').style.opacity = '0';
-        document.querySelector('.msg-body').style.opacity = '1';
+        document.querySelector('.msg').style.display = 'none';
+        document.querySelector('.msg~p').style.display = 'none';
+        document.querySelector('.msg-body').style.display = 'flex';
         type();
         
     });
